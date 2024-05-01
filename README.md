@@ -1,1 +1,1 @@
-# oresk-
+# https://csuszatomi.github.io/oresk-/
