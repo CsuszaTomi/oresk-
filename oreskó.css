@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #00008B, #ADD8E6);
+  }
+
+  .button-container {
+    position: relative;
+    transform-origin: center;
+    animation: sway 3s infinite alternate;
+  }
+
+  @keyframes sway {
+    0% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+  }
