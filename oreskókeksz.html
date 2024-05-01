@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nagy kép</title>
+<title>Oreskó</title>
 <style>
   body {
     margin: 0;
@@ -14,9 +14,56 @@
     height: 100vh;
     background: url('oreskó.jpg') no-repeat center center;
     background-size: cover;
+    overflow: hidden;
+  }
+
+  .floating-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    animation: floatInAndOut 4s forwards;
+  }
+
+  @keyframes floatInAndOut {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    25% {
+      transform: translate(-50%, -40%);
+      opacity: 1;
+    }
+    75% {
+      transform: translate(-50%, -40%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
   }
 </style>
 </head>
 <body>
+<div class="floating-text">Oreskó Szex</div>
+
+<script>
+  // Számláló indítása
+  setTimeout(function() {
+    document.querySelector('.floating-text').style.display = 'none';
+    redirectToLink();
+  }, 4000); // 4 másodperc múlva indul
+
+  // Átirányítás a linkre
+  function redirectToLink() {
+    window.location.href = "https://www.pornhub.com/";
+  }
+</script>
+
 </body>
 </html>
