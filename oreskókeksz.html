@@ -56,12 +56,17 @@
   // Számláló indítása
   setTimeout(function() {
     document.querySelector('.floating-text').style.display = 'none';
-    redirectToLink();
+    redirectToRandomLink();
   }, 4000); // 4 másodperc múlva indul
 
-  // Átirányítás a linkre
-  function redirectToLink() {
-    window.location.href = "https://csuszatomi.github.io/9.Aosztaly-oldal/";
+  // Átirányítás egy véletlenszerű linkre
+  function redirectToRandomLink() {
+    var links = [
+      "https://www.pornhub.com",
+      "index.html"
+    ];
+    var randomIndex = Math.floor(Math.random() * links.length);
+    window.location.href = links[randomIndex];
   }
 </script>
 
